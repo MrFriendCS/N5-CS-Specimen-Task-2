@@ -23,12 +23,13 @@ for index in range(6):
 for index in range(6):
     totalHits = totalHits + teamHits[index]
 
+print("Total hits are: " + str(totalHits))
+
 # Calculate average hits
 averageHits = totalHits / 6
 
 # Round average hits to 2 decimal places
 averageHits = round(averageHits, 2)
-
 print("The average hits are: " + str(averageHits))
 
 # Calculate points earned
@@ -41,12 +42,12 @@ if averageHits >= 10:
 # 1 point earned?
 if points >= 1:
     # Yes - display message - 1 point was earned
-    print("1 point was earned")
+    print("More than 50 hits - 1 point was earned")
 
 # 2 points earned?
 if points == 2:
     # Yes - display message - additional point was earned
-    print("An additional point was earned")
+    print("Average hits 10 or more - An additional point was earned")
 
 # 0 points earned?
 if points == 0:
